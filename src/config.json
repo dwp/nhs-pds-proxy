@@ -1,0 +1,8 @@
+{
+	"project": "nhs-ssb-proxy",
+	"name": "nhs-ssb-proxy-service",
+	"description": "Proxy Service for Auth SAML",
+	"author": "DWP/HSCIC",
+	"debugLevel": "debug",
+	"port": 9003
+}
