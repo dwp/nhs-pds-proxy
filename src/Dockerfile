@@ -1,4 +1,4 @@
-FROM node-js-base
+FROM node:latest
 
 # Bundle app source
 COPY . /src

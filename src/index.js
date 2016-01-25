@@ -4,7 +4,7 @@
 var express = require('express');
 var configJson = require('./config.json');
 var commonTools = require('./common-tools');
-var bridgeService = require('./ssb-bridge-service.js');
+var bridgeService = require('./pds-bridge-service.js');
 
 // Constants & Settings
 var PORT = (parseInt(configJson.port)) ? parseInt(configJson.port) : 9001;
@@ -19,9 +19,9 @@ app.get('/systemStatus', bridgeService.systemStatusPage);
 
 app.get('/queryNhsNumber', bridgeService.queryNhsNumber);
 
-app.get('/dequeueFromBridgeToWorker', bridgeService.dequeueFromBridgeToWorker);
+app.get('/dequeueFromBridgeToWorkerPds', bridgeService.dequeueFromBridgeToWorker);
 
-app.post('/enqueueFromWorkerBackToBridge', bridgeService.enqueueFromWorkerBackToBridge);
+app.post('/enqueueFromWorkerBackToBridgePds', bridgeService.enqueueFromWorkerBackToBridge);
 
 //Initialise
 app.listen(PORT);

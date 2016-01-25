@@ -3,12 +3,6 @@ var commonTools = require('./common-tools');
 var configJson = require('./config.json');
 var htmlencode = require('htmlencode');
 
-// ========================================================
-// Verify To PDS Bridge Service
-// A library of functions for the bridge.
-// MM & IP, Sept 2015
-// ========================================================
-
 var simpleQueue = [];
 
 module.exports = {
